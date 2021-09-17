@@ -1,239 +1,17 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
     <title>Personal Website</title>
   </head>
 
-  <body class="home yui-skin-sam has-badge">
-    <iframe
-      id="_yuiResizeMonitor"
-      title="Text Resize Monitor"
-      style="
-        position: absolute;
-        visibility: visible;
-        width: 2em;
-        height: 2em;
-        top: -31px;
-        left: 0px;
-        border-width: 0px;
-      "
-      __idm_frm__="8589934599"
-    ></iframe>
-    <div
-      class="yui-panel-container yui-dialog yui-overlay-hidden shadow"
-      id="dlgFamilyHistory_c"
-      style="visibility: hidden; left: 618px; top: 383px; z-index: 4"
-    >
-      <div
-        id="dlgFamilyHistory"
-        class="yui-module yui-overlay yui-panel"
-        style="visibility: inherit; width: 30em"
-      >
-        <div class="hd" style="cursor: auto">Please enter problem details</div>
-        <div class="bd">
-          <form
-            id="frmFamilyHistory"
-            method="POST"
-            action="assets/post.php"
-            aria-hidden="true"
-          >
-            <p id="fhd_label" style="font-weight: bold; color: #0033cc"></p>
-            <input
-              type="hidden"
-              id="fhd_id"
-              name="fhd_id"
-              style="display: none"
-            />
-            <input
-              type="hidden"
-              id="fhd_chkid"
-              name="fhd_chkid"
-              style="display: none"
-            />
-            <input
-              type="hidden"
-              id="fhd_problem"
-              name="fhd_problem"
-              style="display: none"
-            />
-            <label for="fhd_relative">Relative:</label>
-            <select id="fhd_relative" name="fhd_relative">
-              <option value="-Select-">-Select-</option>
-              <option value="Father|FTH">Father</option>
-              <option value="Mother|MTH">Mother</option>
-              <option value="Brother|BRO">Brother</option>
-              <option value="Sister|SIS">Sister</option>
-              <option value="Son|SONC">Son</option>
-              <option value="Daughter|DAUC">Daughter</option>
-              <option value="Paternal Grandfather|PGRFTH">
-                Paternal Grandfather
-              </option>
-              <option value="Paternal Grandmother|PGRMTH">
-                Paternal Grandmother
-              </option>
-              <option value="Maternal Grandfather|MGRFTH">
-                Maternal Grandfather
-              </option>
-              <option value="Maternal Grandmother|MGRMTH">
-                Maternal Grandmother
-              </option>
-              <option value="Paternal Uncle|PUNCLE">Paternal Uncle</option>
-              <option value="Maternal Uncle|MUNCLE">Maternal Uncle</option>
-              <option value="Paternal Aunt|PAUNT">Paternal Aunt</option>
-              <option value="Maternal Aunt|MAUNT">Maternal Aunt</option>
-              <option value="Paternal Cousin|PCOUSN">Paternal Cousin</option>
-              <option value="Maternal Cousin|MCOUSN">Maternal Cousin</option>
-            </select>
-            <div class="clear"></div>
-            <label for="fhd_onset_age">Approx Age at Onset</label>
-            <input
-              type="text"
-              id="fhd_onset_age"
-              name="fhd_onset_age"
-              maxlength="30"
-              autocomplete="off"
-            />
-            <div class="clear"></div>
-            <label for="fhd_outcome">Outcome</label>
-            <input
-              type="text"
-              id="fhd_outcome"
-              name="fhd_outcome"
-              maxlength="200"
-              autocomplete="off"
-            />
-            <div class="clear"></div>
-          </form>
-          <form name="frm_dlgFamilyHistory"></form>
-        </div>
-        <div class="ft">
-          <span class="button-group"
-            ><span id="yui-gen2" class="yui-button yui-push-button default"
-              ><span class="first-child"
-                ><button type="button" id="yui-gen2-button">Add</button></span
-              ></span
-            ><span id="yui-gen3" class="yui-button yui-push-button"
-              ><span class="first-child"
-                ><button type="button" id="yui-gen3-button">
-                  Cancel
-                </button></span
-              ></span
-            ></span
-          >
-        </div>
-      </div>
-    </div>
-    <div
-      class="yui-panel-container yui-dialog yui-overlay-hidden shadow"
-      id="dlgPersonalProblem_c"
-      style="visibility: hidden; left: 618px; top: 372px; z-index: 2"
-    >
-      <div
-        id="dlgPersonalProblem"
-        class="yui-module yui-overlay yui-panel"
-        style="visibility: inherit; width: 30em"
-      >
-        <div class="hd" style="cursor: auto">Please enter problem details</div>
-        <div class="bd">
-          <form
-            id="frmPersonalProblem"
-            method="POST"
-            action="assets/post.php"
-            aria-hidden="true"
-          >
-            <p id="prd_label" style="font-weight: bold; color: #0033cc">xyz</p>
-            <input
-              type="hidden"
-              id="prd_id"
-              name="prd_id"
-              style="display: none"
-            />
-            <input
-              type="hidden"
-              id="prd_chkid"
-              name="prd_chkid"
-              style="display: none"
-            />
-            <input
-              type="hidden"
-              id="prd_problem"
-              name="prd_problem"
-              style="display: none"
-            />
-            <label for="prd_onset_date">Approx Onset Date</label>
-            <span class="datefield">
-              <input
-                type="text"
-                id="prd_onset_date"
-                name="prd_onset_date"
-                class="date-picker"
-                value=""
-                maxlength="10"
-                autocomplete="off"
-              />
-              <button
-                type="button"
-                id="prd_onset_date_calbtn"
-                title="Show Calendar"
-                aria-hidden="true"
-              >
-                <img
-                  src="/Resources/images/calbtn.gif"
-                  alt="Calendar"
-                  width="18"
-                  height="18"
-                />
-              </button>
-            </span>
-            <div class="clear"></div>
-            <label for="prd_onset_age">Approx Age at Onset</label>
-            <input
-              type="text"
-              id="prd_onset_age"
-              name="prd_onset_age"
-              maxlength="30"
-              autocomplete="off"
-            />
-            <div class="clear"></div>
-            <label for="prd_comment">Comment</label>
-            <input
-              type="text"
-              id="prd_comment"
-              name="prd_comment"
-              maxlength="200"
-              autocomplete="off"
-            />
-            <div class="clear"></div>
-          </form>
-          <form name="frm_dlgPersonalProblem"></form>
-        </div>
-        <div class="ft">
-          <span class="button-group"
-            ><span id="yui-gen0" class="yui-button yui-push-button default"
-              ><span class="first-child"
-                ><button type="button" id="yui-gen0-button">Add</button></span
-              ></span
-            ><span id="yui-gen1" class="yui-button yui-push-button"
-              ><span class="first-child"
-                ><button type="button" id="yui-gen1-button">
-                  Cancel
-                </button></span
-              ></span
-            ></span
-          >
-        </div>
-      </div>
-    </div>
+  <script type="text/javascript">
+    var myDate = new Date();
+    document.write(myDate.toLocaleString());
+  </script>
 
+  <body class="general">
     <div id="quarantineBadge" class="badge-Green">
-      <div
-        style="position: fixed; top: 0; left: 0; width: 100vw; z-index: 9999"
-      >
-        <button class="exit btn btn-primary btn-sm pull-right">
-          <i class="fa fa-close"></i>
-        </button>
-      </div>
-
       <p>Clearance Status</p>
       <h1 style="margin-top: -20px; font-size: 2.75em">Cleared</h1>
       <div id="now" style="font-size: 1.4em">9/16/2021 11:31 PM</div>
@@ -259,9 +37,7 @@
         </div>
       </div>
       <div id="badgeqr" class="mt-2">
-        <img
-          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAIAAAD/gAIDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUYSURBVHhe7dBRruVKCkTRN/9JV6t0lyxUpjiBfV5/dOf+scgIAsw/vw4x51gLzrEWnGMtOMdacI614BxrwTnWgnOsBedYC86xFpxjLYiO9c87pBQII6wdHMWjfoqUT5xj/UbKJ86xfiPlE7tjqTP0dL+kXqK5aye83nAm8ol8vYp6mXOhuWsnvN5wJvKJfL2KeplzoblrJ7zecCbyiex++w7HuAohk9Sd+YKj67rDkSVXIp/I761CyCR1Z77g6LrucGTJlcgn8nurEDJJ3ZkvOLquOxxZciXyiXy9ijpbjrWDo0B4veHMbm/101XU2XKsHRwFwusNZ3Z7q5+uos6WY+3gKBBebziz21v9ehXCCGsHxzhL3cExbtgS+UR+bxXCCGsHxzhL3cExbtgS+UR+bxXCCGsHxzhL3cExbtgS+UTGoT/oWf7AHY4Oju9tOBP5RL5eRd3B0cHRwfG9DWcin8jXq6g7ODo4Oji+t+FM5BP5FCndcurvvTxDyicin8inSFn+tnr58gwpn4h8Ip8iZfnb6uXLM6R8IvV9FzsWCN0h7nDEP/ktzrEWnGMtiOZZLUNP1sXa/b+6QCgQshx19xISNcjO0JN1sY6/dEEoELIcdfcSEjXIztCTdbGOv3RBKBCyHHX3ErJrMKSD4ylSCoQlmrvTXBD2nGMtOMda8C/+pHr5ckEYYR3XuMNRIHwi9f0N0wqEIqmzlwvCCOu4xh2OAuETqe9vmFYgFEmdvVwQRljHNe5wFAifSH1/YMgIa4aeAuHpLMJSmlk3/GDaCGuGngLh6SzCOdYd1gLhv38s2d0PqMeXBD0FQoFQIBQI2XTWmKhBdreKenxJ0FMgFAgFQoGQTWeNiRpkd6uox5cEPQVCgVAgFAjZdNaYqEF2t4q6e1mhuUDo4Og8hKUUEnUaUsaox5cVmguEDo7OQ1hKIVGnIWWMenxZoblA6ODoPISlFBJ1GvJ0uQvCMlDdwTHCOsL6id08dYEwSheEZaC6g2OEdYT1E7t56gJhlC4Iy0B1B8cI6wjrJ3bz1MsfIMQ7/YHmcTphlO5wxItFPpHjThccBUK80x9oHqcTRukOR7xY5BM57nTBUSDEO/2B5nE6YZTucMSLRT6R3U7q771cEEYpQc9yekvkE7kcrF6+XBBGKUHPcnpL5BO5HKxevlwQRilBz3J6S+r7Clbr1h1g7cyEDo7OQ4hvdLFueIMdz7ES7Pi/fSzZT5HSbakef+mCkOWoC4RRmol8Ip8iZfwldYFQIGQ56gJhlGYin8inSBl/SV0gFAhZjrpAGKWZyCcyDv1BT9dFyAJZu79Vd3C8nl55uG6CntfrshazemzneD298nDdBD2v12UtZvXYzvF6euXtunc4xi51hp5/AQNiogbZ51i+I7LPsXxHZH/vWBeETFK/frnD8YnIJ3I5WD12ETJJ/frlDscnIp/I5WD12EXIJPXrlzscn4h8IpeD1cuXOxwFQgdHN+KCkE2vRD6R4wYXHGOXunu5w1EgdHB0Iy4I2fRK5BM5bnDBMXapu5c7HAVCB0c34oKQTa9EPpFx6A96sr0vCGPXHdZsxAXH6KlEPpFx6A96ln9CGLvusGYjLjhGTyXyiYxDf9Cz/BPC2HWHNRtxwTF6KpFP5FOkjDkcBUL8J39DygjrJ86xfsP6iXOs37B+4u0q/1ecYy04x1pwjrXgHGvBOdaCc6wF51gLzrEWnGMtOMdacI614Bwr5tev/wCcjY0CK8AmwQAAAABJRU5ErkJggg=="
-        />
+        <img src="user.png" />
       </div>
       <div style="font-size: 0.8em">Next Lab Test Due: 9/19/2021 11:00 PM</div>
       <div style="font-size: 0.8em">Next Survey Due: 9/17/2021 10:00 AM</div>
